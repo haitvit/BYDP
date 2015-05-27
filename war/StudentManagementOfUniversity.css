@@ -21,6 +21,8 @@
 .mainWorklist {
 	border: 1px solid #CDCDCD;
 	border-left: none;
+	max-height: 900px;
+	overflow: scroll;
 }
 
 /** Most GWT widgets already have a style name defined */
