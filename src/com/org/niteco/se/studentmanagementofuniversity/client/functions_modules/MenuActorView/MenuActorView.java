@@ -8,6 +8,11 @@ import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class MenuActorView {
+	
+	private VerticalPanel mainMenuView;
+	private Label userLabel;
+	private Label logoutLabel;
+	
 	private StackPanel menuPanel;
 
 	public MenuActorView(StackPanel menuPanel) {
@@ -24,6 +29,15 @@ public class MenuActorView {
 	}
 
 	public void onModuleLoad() {
+		userLabel = new Label();
+		logoutLabel = new Label();
+		
+		userLabel.addStyleName("userLabel");
+		logoutLabel.addStyleName("logoutLabel");
+		
+		//userLabel.setText(text);
+		
+		
 
 		TreeItem root1 = new TreeItem();
 		root1.setText("Student");
@@ -48,6 +62,10 @@ public class MenuActorView {
 		menuPanel.add(new Label("g"), "Score");
 
 		menuPanel.addStyleName("mainPanel");
+		
+		
+		mainMenuView = new VerticalPanel();
+		mainMenuView.add(userLabel = new Label());
 	}
 
 }
