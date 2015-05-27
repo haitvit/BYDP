@@ -1,6 +1,7 @@
 package com.org.niteco.se.studentmanagementofuniversity.client.functions_modules.login;
 
 import java.util.ArrayList;
+
 import java.util.Date;
 import java.util.List;
 
@@ -9,6 +10,7 @@ import com.org.niteco.se.studentmanagementofuniversity.client.StudentManagementS
 import com.org.niteco.se.studentmanagementofuniversity.client.Model.Student;
 import com.org.niteco.se.studentmanagementofuniversity.client.Model.StudentOfWorkList;
 import com.org.niteco.se.studentmanagementofuniversity.client.Model.User;
+import com.org.niteco.se.studentmanagementofuniversity.client.functions_modules.MenuActorView.MenuActorView;
 import com.org.niteco.se.studentmanagementofuniversity.client.functions_modules.addObject.CreateStudentView;
 import com.org.niteco.se.studentmanagementofuniversity.client.i18n.AuthenticationConstants;
 import com.org.niteco.se.studentmanagementofuniversity.shared.FieldVerifier;
@@ -31,8 +33,6 @@ import com.google.gwt.user.client.ui.PasswordTextBox;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.StackPanel;
 import com.google.gwt.user.client.ui.TextBox;
-import com.google.gwt.user.client.ui.Tree;
-import com.google.gwt.user.client.ui.TreeItem;
 import com.google.gwt.user.client.ui.VerticalPanel;
 
 public class LoginActorView extends Composite implements EntryPoint {
@@ -65,9 +65,14 @@ public class LoginActorView extends Composite implements EntryPoint {
 	private List<Integer> idStudentList;
 	
 	
-	VerticalPanel addStudentPanel;
+	
 	
 	CreateStudentView createStudentView;
+	VerticalPanel addStudentPanel;
+	
+	
+	MenuActorView menuActorView;
+	StackPanel menuPanel;
 	
 	
 	
@@ -358,34 +363,13 @@ public class LoginActorView extends Composite implements EntryPoint {
 		
 		/* MainPageView */
 
-		TreeItem root1 = new TreeItem();
-		root1.setText("Student");
-		root1.addTextItem("Technology Imformation");
-		root1.addTextItem("Envirament");
-		root1.addTextItem("");
-
-		TreeItem item1 = new TreeItem(new CheckBox("item3"));
-		root1.addItem(item1);
-
-		Tree t = new Tree();
-
-		t.addItem(root1);
-
-		final StackPanel menuPanel = new StackPanel();
-		VerticalPanel a = new VerticalPanel();
-		a.add(t);
-
-		menuPanel.add(a, "Student");
-		menuPanel.add(new Label("d"), "Subject");
-		menuPanel.add(new Label("a"), "Class");
-		menuPanel.add(new Label("g"), "Score");
-
-		menuPanel.addStyleName("mainPanel");
 		
 		
 		createStudentView = new CreateStudentView(addStudentPanel);
 		addStudentPanel = createStudentView.getAddStudentPanel();
 		
+		menuActorView = new MenuActorView(menuPanel);
+		menuPanel = menuActorView.getMenuPanel();
 		
 		mainPage = new HorizontalPanel();
 		mainPage.add(menuPanel);

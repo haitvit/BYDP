@@ -109,8 +109,8 @@ public class StudentManagementServiceImpl extends RemoteServiceServlet
 		try {
 
 			Connection conn = connection.getConn();
-			Statement select = conn.createStatement();
-			ResultSet result = select.executeQuery(sqlSelectStudents);
+			Statement statement = conn.createStatement();
+			ResultSet result = statement.executeQuery(sqlSelectStudents);
 
 			List<StudentOfWorkList> students = new ArrayList<StudentOfWorkList>();
 			while (result.next()) {
