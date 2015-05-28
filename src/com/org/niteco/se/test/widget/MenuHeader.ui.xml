@@ -1,0 +1,12 @@
+<!DOCTYPE ui:UiBinder SYSTEM "http://dl.google.com/gwt/DTD/xhtml.ent">
+<ui:UiBinder xmlns:ui="urn:ui:com.google.gwt.uibinder"
+	xmlns:g="urn:import:com.google.gwt.user.client.ui">
+	<ui:with type="com.org.niteco.se.test.client.FinsResources" field="resource" />
+	<g:SimplePanel>
+	    <g:HorizontalPanel>
+	        <g:Image ui:field="image" />
+	        <g:Image resource="resource.blank" />
+	        <g:HTML ui:field="html" />
+	    </g:HorizontalPanel>
+	</g:SimplePanel>
+</ui:UiBinder> 
