@@ -1,0 +1,159 @@
+/** Add css rules here for your application. */
+/** Example rules used by the template application (remove for your app) */
+.loginButton ,.addStudentButton{
+	border: none;
+	background: #fff;
+	border-radius: 5px;
+	margin-left: 20px;
+	color: black;
+	height: 30px;
+	width: 50px;
+}
+
+.addStudentButton{
+	margin-top: 5px;
+}
+
+.mainPagePanel {
+	background: red;
+}
+
+.mainWorklist {
+	border: 1px solid #CDCDCD;
+	border-left: none;
+	max-height: 900px;
+	overflow: scroll;
+}
+
+/** Most GWT widgets already have a style name defined */
+.gwt-DialogBox {
+	width: 400px;
+}
+
+.lastUpdateLabel {
+	width: 300px;
+	line-height: 30px;
+	text-align: center;
+	margin: 5px 5px 5px 0px;
+}
+
+.updateElementRow {
+	width: 150px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.dialogVPanel {
+	margin: 5px;
+}
+
+.aaa {
+	color: red;
+	cursor: pointer;
+}
+
+.labelStudent{
+	width: 100px;
+}
+
+.fieldStudentPanel{
+	margin: 5px 5px 0px 5px;
+	
+}
+
+.addStudentPanel{
+	background: #e3e8ef;
+	border: 1px solid #CDCDCD;
+	border-left: none;
+	border-bottom: none;
+}
+
+.button-worklist{
+	margin: 5px 5px 5px 0px;
+	width: 70px;
+	background-color: #D3DEF6;
+	background-image: url("images/hborder.png");
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: 0px -989px;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.button-worklist:hover ,.addStudentButton:hover,.loginButton:hover{
+	background: #CDCDCD;
+}
+
+.buttonList {
+	float: right;
+}
+
+.rowTable {
+	width: 1050px;
+	
+}
+
+.elementRow {
+	background: #e3e8ef;
+	width: 150px;
+	text-align: center;
+	background-color: #D3DEF6;
+	background-image: url("images/hborder.png");
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position: 0px -989px;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	line-height: 26px;
+	border-bottom: 1px solid #BBB; 
+}
+
+.serverResponseLabelError {
+	color: red;
+}
+
+.textField {
+	width: 200px;
+	margin-left: 20px;
+}
+
+.loginPanel {
+	width: 500px;
+	height: 200px;
+	position: absolute;
+	background: #e3e8ef;
+}
+
+.logoLabel {
+	background: url("images/logo.png");
+	width: 184px;
+	height: 50px;
+}
+
+.errorStyle {
+	color: red;
+}
+
+.mainPageWorkList{
+	width: 50%;
+	height: 1000px;
+}
+
+.mainPanel {
+	overflow: scroll;
+	width: 200px;
+	height: 1000px;
+}
+
+.textLogin {
+	font-size: 2em;
+	font-weight: bold;
+	margin: 20px 0px 20px;
+	text-align: center;
+}

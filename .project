@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
+<<<<<<< HEAD
 	<name>Test</name>
+=======
+	<name>StudentManagementOfUniversity</name>
+>>>>>>> 05021c3d210286ed195c44f1ea727885de145cf5
 	<comment></comment>
 	<projects>
 	</projects>

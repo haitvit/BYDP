@@ -6,6 +6,7 @@
          xmlns="http://java.sun.com/xml/ns/javaee">
 
   <!-- Servlets -->
+<<<<<<< HEAD
   <servlet>
     <servlet-name>greetServlet</servlet-name>
     <servlet-class>com.org.niteco.se.test.server.GreetingServiceImpl</servlet-class>
@@ -14,11 +15,26 @@
   <servlet-mapping>
     <servlet-name>greetServlet</servlet-name>
     <url-pattern>/test/greet</url-pattern>
+=======
+  
+   <servlet>
+    <servlet-name>studentManagementServlet</servlet-name>
+    <servlet-class>com.org.niteco.se.studentmanagementofuniversity.server.SmService.StudentManagementServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>studentManagementServlet</servlet-name>
+    <url-pattern>/studentmanagementofuniversity/student</url-pattern>
+>>>>>>> 05021c3d210286ed195c44f1ea727885de145cf5
   </servlet-mapping>
   
   <!-- Default page to serve -->
   <welcome-file-list>
+<<<<<<< HEAD
     <welcome-file>Test.html</welcome-file>
+=======
+    <welcome-file>StudentManagementOfUniversity.html</welcome-file>
+>>>>>>> 05021c3d210286ed195c44f1ea727885de145cf5
   </welcome-file-list>
 
 </web-app>
